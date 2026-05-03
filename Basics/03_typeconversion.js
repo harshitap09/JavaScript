@@ -1,7 +1,22 @@
+//Operations
+
+let value = 4
+let negValue = -value
+
+console.log(value, negValue)
+
+console.log(2 + 2, 2 - 2, 2 * 2, 2 ** 3, 2 / 2, 2 % 3)
+
+console.log(+true) //1
+console.log(+"") //0
+
+
+//Type Conversion
+
 let score = "33";
 
 console.log(typeof score) //string
-console.log(typeof(score))
+console.log(typeof (score))
 
 let score1 = Number(score) //type conversion
 console.log(typeof score1) //number

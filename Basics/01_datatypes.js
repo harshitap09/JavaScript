@@ -17,3 +17,31 @@ console.table([name, age, isHuman])
 console.log(typeof name)
 console.log(typeof null)
 console.log(typeof undefined)
+
+//------------Primitive------------
+//String, Number, Boolean, Null, Undefined, BigInt, Symbol
+
+//----------Non-Primitive----------
+//Object, Array, Function
+
+
+//Array
+const heros = ["shaktiman", "spiderman", "batman"]
+console.log(heros)
+console.log(typeof heros)
+
+//Object
+let myObj = {
+    name: "harshita",
+    age: 21,
+    isHuman: true
+}
+console.log(myObj)
+console.log(typeof myObj)
+
+//Function
+let myFunction = function () {
+    console.log("Hello World");
+}
+console.log(myFunction)
+console.log(typeof myFunction)

@@ -20,3 +20,4 @@ console.log(address);
 const { estd: established } = school;
 console.log(established);
 
+

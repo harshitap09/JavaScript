@@ -26,3 +26,32 @@ if (true) {
 console.log(c); //c is accessible outside the block
 
 
+//nested functions
+function one() {
+    const username = "jia";
+
+    function two() {
+        const website = "instagram";
+        console.log(username);
+    }
+
+    //console.log(website);
+
+    two();
+}
+
+one();
+
+
+//Functions and Expressions (Hoisting)
+console.log(add(5));  //works
+function add(num) {
+    return num + num;
+}
+
+//console.log(addTwo(5));  //error : bcz it is not declared yet
+const addTwo = function (num) {
+    return num + num;
+}
+
+console.log(addTwo(3));

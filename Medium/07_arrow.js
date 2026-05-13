@@ -1,0 +1,40 @@
+//This keyword refers to the current instance of the object,
+//Basically, it keeps the current context of the code
+
+const user = {
+    name: "jia",
+    product: "shampoo",
+    price: 499,
+
+    welcomeMessage: function () {
+        console.log(`Hey, ${this.name}! Welcome to the website!`);
+        console.log(this);      //returns the entire object ( current instance )
+    }
+
+
+}
+
+user.welcomeMessage();  //first context
+user.name = "harshita"; //changed value
+user.welcomeMessage();  //second context
+
+console.log(this);      //empty parenthesis in global scope
+
+
+
+//function and this keyword
+function chai() {
+    let username = "harshita";
+    console.log(this.username);
+}
+
+chai()
+
+//Arrow function
+// const add = (num1, num2) => {
+//     return num1 + num2;
+// }
+//console.log(add(10, 20));
+
+//Implicit return
+const add = (num1, num2) => num1 + num2;

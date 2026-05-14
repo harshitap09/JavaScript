@@ -31,10 +31,20 @@ function chai() {
 chai()
 
 //Arrow function
-// const add = (num1, num2) => {
-//     return num1 + num2;
-// }
-//console.log(add(10, 20));
+const add = (num1, num2) => {
+    return num1 + num2;
+}
+console.log(add(10, 20));
 
-//Implicit return
-const add = (num1, num2) => num1 + num2;
+
+//Implicit return: no need to explicitly write return
+const add1 = (num1, num2) => num1 + num2;
+//also
+const add2 = (num1, num2) => (
+    num1 + num2   //similarly we can write curly braces but need to return
+)
+
+
+//when we have to return an object:
+const addObj = (num1, num2) => ({ username: "harshita" }); //important: need to add parenthesis
+console.log(addObj(10, 20));

@@ -41,10 +41,10 @@ console.log(add(10, 20));
 const add1 = (num1, num2) => num1 + num2;
 //also
 const add2 = (num1, num2) => (
-    num1 + num2   //similarly we can write curly braces but need to return
+    num1 + num2   //similarly we can write curly braces 
 )
 
 
 //when we have to return an object:
-const addObj = (num1, num2) => ({ username: "harshita" }); //important: need to add parenthesis
-console.log(addObj(10, 20));
+const retObj = (num1, num2) => ({ username: "harshita" }) //important: need to add parenthesis
+console.log(retObj(10, 20));
